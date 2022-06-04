@@ -59,7 +59,7 @@ const size = 1024;
 );
 // scene.add(sphere); */
 
-const scale = 512;
+const scale = 1024;
 /* const textureLoader = new TextureLoader();
 const plane = new Mesh(
   new PlaneBufferGeometry(size * scale, size * scale, 1, 1)
@@ -167,8 +167,8 @@ function calcNormal(p, fn, n) {
   // }
 }
 
-let numPoints = 2000000;
-const width = 512; // nextPowerOfTwo(Math.sqrt(numPoints));
+let numPoints = 100000;
+const width = 4096; // nextPowerOfTwo(Math.sqrt(numPoints));
 const height = width; // Math.ceil(numPoints / width);
 console.log('got width height', width, height);
 
@@ -185,7 +185,7 @@ export default e => {
   }); */
 
   function distributeGrass() {
-    const width = Math.ceil(Math.sqrt(points.length));
+    // const width = Math.ceil(Math.sqrt(points.length));
     // const height = Math.ceil(points.length / width);
 
     const distort = generateDistortFn();
