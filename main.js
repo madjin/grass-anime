@@ -52,7 +52,7 @@ const material = new GrassMaterial({ wireframe: !true });
 
 // opaque interior
 
-const size = 256;
+const size = 1024;
 /* const sphere = new Mesh(
   new IcosahedronBufferGeometry(1, 10),
   new MeshBasicMaterial({ color: 0, side: DoubleSide })
