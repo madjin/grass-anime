@@ -108,10 +108,10 @@ for (let i = 0; i < plane.geometry.attributes.uv.count; i++) {
 scene.add(plane); */
 
 function generateDistortFn() {
-  const a = randomInRange(-100, 100);
-  const b = randomInRange(-100, 100);
-  const c = randomInRange(-100, 100);
-  const radius = 1; // randomInRange(0.5, 1);
+  const a = randomInRange(-1000, 1000);
+  const b = randomInRange(-1000, 1000);
+  const c = randomInRange(-1000, 1000);
+  const radius = 5; // randomInRange(0.5, 1);
   return (p) => {
     p.multiplyScalar(2 + radius * perlin3(p.x + a, p.y + b, p.z + c));
   };
