@@ -2,7 +2,7 @@ import { randomInRange } from "../modules/Maf.js";
 import { Vector3 } from 'three';
 
 class Poisson3D {
-  constructor(width = 512, height = 512, depth = 512, r = 4, k = 30) {
+  constructor(width = 4096, height = 2048, depth = 4096, r = 32, k = 240) {
     this.r = r;
     this.k = k;
     this.cellSize = this.r / Math.sqrt(2); // 2 = dimensions
