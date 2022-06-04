@@ -52,14 +52,14 @@ const material = new GrassMaterial({ wireframe: !true });
 
 // opaque interior
 
-const size = 16;
+const size = 64;
 /* const sphere = new Mesh(
   new IcosahedronBufferGeometry(1, 10),
   new MeshBasicMaterial({ color: 0, side: DoubleSide })
 );
 // scene.add(sphere); */
 
-const scale = 32;
+const scale = 128;
 /* const textureLoader = new TextureLoader();
 const plane = new Mesh(
   new PlaneBufferGeometry(size * scale, size * scale, 1, 1)
