@@ -59,7 +59,7 @@ const size = 16;
 );
 // scene.add(sphere); */
 
-const scale = 8;
+const scale = 32;
 /* const textureLoader = new TextureLoader();
 const plane = new Mesh(
   new PlaneBufferGeometry(size * scale, size * scale, 1, 1)
