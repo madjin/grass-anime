@@ -167,8 +167,8 @@ function calcNormal(p, fn, n) {
   // }
 }
 
-let numPoints = 1000000;
-const width = 512; // nextPowerOfTwo(Math.sqrt(numPoints));
+let numPoints = 2000000;
+const width = 4096; // nextPowerOfTwo(Math.sqrt(numPoints));
 const height = width; // Math.ceil(numPoints / width);
 // console.log('got width height', width, height);
 
@@ -213,7 +213,7 @@ export default e => {
       scene.remove(mesh);
       mesh = null;
     }
-    const geometry = new PlaneBufferGeometry(0.01, 1, 2, 3);
+    const geometry = new PlaneBufferGeometry(0.1, 1, 2, 3);
     const trans = new Matrix4().makeTranslation(0, -0.5, 0);
     geometry.applyMatrix4(trans);
     const rot = new Matrix4().makeRotationX(-Math.PI / 2);
