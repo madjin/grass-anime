@@ -52,14 +52,14 @@ const material = new GrassMaterial({ wireframe: !true });
 
 // opaque interior
 
-const size = 1024;
+const size = 4;
 /* const sphere = new Mesh(
   new IcosahedronBufferGeometry(1, 10),
   new MeshBasicMaterial({ color: 0, side: DoubleSide })
 );
 // scene.add(sphere); */
 
-const scale = 1024;
+const scale = 8;
 /* const textureLoader = new TextureLoader();
 const plane = new Mesh(
   new PlaneBufferGeometry(size * scale, size * scale, 1, 1)
@@ -167,7 +167,7 @@ function calcNormal(p, fn, n) {
   // }
 }
 
-let numPoints = 100000;
+let numPoints = 1000000;
 const width = 4096; // nextPowerOfTwo(Math.sqrt(numPoints));
 const height = width; // Math.ceil(numPoints / width);
 console.log('got width height', width, height);
@@ -213,7 +213,7 @@ export default e => {
       scene.remove(mesh);
       mesh = null;
     }
-    const geometry = new PlaneBufferGeometry(0.1, 3, 6, 9);
+    const geometry = new PlaneBufferGeometry(0.1, 1, 2, 3);
     const trans = new Matrix4().makeTranslation(0, -0.5, 0);
     geometry.applyMatrix4(trans);
     const rot = new Matrix4().makeRotationX(-Math.PI / 2);
