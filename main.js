@@ -168,7 +168,7 @@ function calcNormal(p, fn, n) {
 }
 
 let numPoints = 1000000;
-const width = 4096; // nextPowerOfTwo(Math.sqrt(numPoints));
+const width = 1024; // nextPowerOfTwo(Math.sqrt(numPoints));
 const height = width; // Math.ceil(numPoints / width);
 console.log('got width height', width, height);
 
