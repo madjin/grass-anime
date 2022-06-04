@@ -7,7 +7,7 @@ function pointsOnSphere(n) {
   const off = 2.0 / n;
   let r;
   var phi;
-  let dmin = 100000;
+  let dmin = 10000;
   const prev = new Vector3();
   const cur = new Vector3();
 
